@@ -23,7 +23,7 @@ _________                __                         _________ .__  .__          
 /    \  \/\__  \ \____ \   __\  |  \_  __ \_/ __ \  /    \  \/|  | |  |/ __ \ /    \   __\/  ___/ 
 \     \____/ __ \|  |_> >  | |  |  /|  | \/\  ___/  \     \___|  |_|  \  ___/|   |  \  |  \___ \  
  \______  (____  /   __/|__| |____/ |__|    \___  >  \______  /____/__|\___  >___|  /__| /____  > 
-        \/     \/|__|                           \/          \/             \/     \/          \/   ver. Mark 1.0
+        \/     \/|__|                           \/          \/             \/     \/          \/   ver. experimental 1.0
 Commands:
 time_loop ; start_now ; google_query ; test ; options ; help.
         
@@ -31,23 +31,9 @@ time_loop ; start_now ; google_query ; test ; options ; help.
 
 
 pt_txt = lambda Horario, Nome:  (f"""{Horario}, representante da {Nome}, Como vai?  
-Sou apaixonado por ajudar empresas a brilharem nas redes sociais! Se você busca alcançar mais clientes, aumentar a visibilidade da sua marca e fortalecer sua presença online, estou aqui para fazer isso acontecer!
+Esse é meu projetp""")
 
-💼💬 Vamos marcar uma reunião para conhecer melhor suas necessidades e objetivos? Quero entender sua empresa, suas ideias e juntos criarmos uma estratégia personalizada para o seu sucesso nas mídias sociais! 📈
-
-💬 Estou empolgado(a) para compartilhar meu conhecimento e experiência, proporcionando resultados incríveis para o seu negócio. Vamos fazer acontecer? 💪🤝 Responda essa mensagem e vamos agendar uma conversar.
-                
-https://www.instagram.com/funkitwaterford/ 
-                
-https://www.instagram.com/marcosluzz__/""")
-
-eng_txt = lambda Horario, Nome: (f"""{Horario}, representante da {Nome}. Meu nome é Marcos Luz, Ofereço serviços de mídia social e estratégia digital. Tendo em conta a grande visibilidade que o seu negócio tem, podemos maximizá-la para aumentar as vendas e o tráfego digital. Abaixo segue uma breve explicação de nossos serviços, para que possamos agendar uma reunião para explicar melhor nossos serviços e conversar sobre preços. 
-                
-Estamos no mercado de marketing e mídia social há mais de 5 anos. Colocamos a sua imagem online num nível de visibilidade elevado que chega a novas prospeções e outros negócios. Nosso conteúdo é fácil de digerir e interessante, sempre baseado no produto e na imagem que você vende. Abaixo estão nossas referências e imagens métricas de nosso alcance orgânico e trabalho. 
-                
-https://www.instagram.com/funkitwaterford/ 
-                
-https://www.instagram.com/marcosluzz__/""")
+eng_txt = lambda Horario, Nome: (f"""{Horario}, Representative da {Nome}. My nome é Superjoa10, ant this is my project""")
 
 
 def get_settings():#TODO
@@ -129,9 +115,9 @@ def send_message(navegador, numero, mensagem):
         try:
             navegador.find_element(By.XPATH, '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[2]').click()
             time.sleep(5)
-            enviar_midia(navegador, "C:/Users/João/Projects/Resume.atempts/client_capture/images/metrica_0.jpg")
+            enviar_midia(navegador, "images/2916315.png")
             time.sleep(3)
-            enviar_midia(navegador, "C:/Users/João/Projects/Resume.atempts/client_capture/images/metrica_1.jpg")
+            enviar_midia(navegador, "images/2916315.png")
             
             time.sleep(7)
             return True, 'SUCCESS'
